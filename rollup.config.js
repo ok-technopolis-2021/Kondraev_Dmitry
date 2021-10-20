@@ -9,7 +9,7 @@ const template = ({ attributes, bundle, files, publicPath, title }) =>
 export default {
     input: 'src/app.js',
     output: {
-        file: 'dist/output.js',
+        file: 'dist/app.js',
         format: 'esm'
     },
     plugins: [
