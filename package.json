@@ -18,5 +18,9 @@
   "homepage": "https://github.com/ok-technopolis-2021/Kondraev_Dmitry#readme",
   "dependencies": {
     "rollup": "^2.58.0"
+  },
+  "devDependencies": {
+    "rollup-plugin-scss": "^3.0.0",
+    "sass": "^1.43.2"
   }
 }
