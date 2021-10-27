@@ -3,7 +3,7 @@ import html from '@rollup/plugin-html'
 import fs from 'fs';
 
 // hack!
-const template = ({ attributes, bundle, files, publicPath, title }) => 
+const template = ({ }) =>
     fs.readFileSync("./index.html")
 
 export default {
