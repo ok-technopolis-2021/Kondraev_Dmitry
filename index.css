@@ -18,7 +18,7 @@ html, body {
     /* Children */
     display: flex;
     flex-direction: row-reverse;
-    justify-content: flex-begin;
+    justify-content: flex-start;
     text-align: center;
 }
 
@@ -33,7 +33,7 @@ html, body {
         justify-content: center;
     }
 
-        .card_main h1 {  
+        .card_main_heading {
             font-weight: bold;
             font-size: 62px;
             line-height: 71px;
@@ -42,7 +42,7 @@ html, body {
             margin-top: 9px;
         }
         
-        .card_main p {
+        .card_main_para {
             font-weight: 500;
             font-size: 22px;
             line-height: 28px;
@@ -72,7 +72,7 @@ html, body {
             box-shadow: 12px 12px 0px rgba(196, 196, 196, 0.2);
         }
 
-        .card_aside h2 {
+        .card_aside_heading {
             font-weight: bold;
             font-size: 38px;
             line-height: 44px;
@@ -81,14 +81,14 @@ html, body {
             margin-top: 32px;
         }
 
-        .card_aside p {
+        .card_aside_para {
             font-size: 20px;
             line-height: 23px;
             margin: 0;
             margin-top: 6px;
         }
 
-        ul.social-networks {
+        ul.social {
             list-style-type: none;
             padding: 0px;
             margin: 0;
@@ -101,7 +101,7 @@ html, body {
             gap: 0 10px;
         }
 
-            .social_icon img {
+            .social_icon_image {
                 width: 24px;
                 display: block; /* prevent bad height */
             }
@@ -121,7 +121,7 @@ html, body {
             color: white;
         }
 
-        .card_aside footer {
+        .card_aside_footer {
             font-weight: 500;
             font-size: 14px;
             line-height: 19px;
@@ -130,7 +130,7 @@ html, body {
             margin-bottom: 13px;
         }
 
-.social_icon a:focus,
+.social_icon_link:focus,
 .card_aside_download:focus {
     outline: 1px dashed white;
 }
