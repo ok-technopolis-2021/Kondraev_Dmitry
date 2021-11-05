@@ -1,4 +1,4 @@
-.card {
+body {
     --foreground: white;
     --focus-outline: white;
     --avatar-background: #c4c4c4;
@@ -10,11 +10,11 @@
     --polytech: url("./images/icons/polytech-Light-24px.png");
 }
 
-.card.light-theme {
+body.light-theme {
     --foreground: #282828;
     --focus-outline: #6e6e6e;
     --avatar-background: #3b3b3b;
-    --avatar-shadow: rgba(59, 59, 59, 0.2);
+    --avatar-shadow: rgba(59, 59, 59, 0.4);
     --background: #bbbbbb;
     --accent-background: #dddddd;
     --github: url("./images/icons/GitHub-Mark-Dark-24px.png");
@@ -165,4 +165,37 @@ html, body {
 .social__icon:focus,
 .download-button:focus {
     outline: 1px dashed var(--focus-outline);
+}
+
+/* Theme switcher */
+
+body {
+    --switch-icon: "☼";
+}
+
+body.light-theme {
+    --switch-icon: "☾︎";
+}
+
+.theme-switcher {
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    border-radius: 9px;
+    color: var(--foreground);
+    background-color: var(--background);
+    text-align: center;
+    font-size: 22px;
+}
+
+.theme-switcher::after {
+    content: var(--switch-icon);
+}
+
+.theme-switcher:hover {
+    cursor: pointer;
+}
+
+.theme-switcher:focus, .theme-switcher:focus-visible {
+    outline: 3px solid rgba(13,110,253,.25);
 }

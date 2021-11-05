@@ -10,6 +10,7 @@
 </head>
 
 <body>
+<button class="theme-switcher"></button>
 <div class="card">
     <div class="main-info">
         <h1 class="main-info__name">Kondraev Dmitry</h1>
@@ -31,6 +32,11 @@
         <footer class="card__footer">© 2021 All rights reserved</footer>
     </section>
 </div>
+<script>
+    document.querySelector('.theme-switcher').addEventListener('click', function() {
+        document.body.classList.toggle('light-theme');
+    })
+</script>
 </body>
 
 </html>
