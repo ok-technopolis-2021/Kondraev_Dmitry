@@ -1,5 +1,28 @@
+.card {
+    --foreground: white;
+    --focus-outline: white;
+    --avatar-background: #c4c4c4;
+    --avatar-shadow: rgba(196, 196, 196, 0.2);
+    --background: #444444;
+    --accent-background: #222222;
+    --github: url("./images/icons/GitHub-Mark-Light-24px.png");
+    --tamtam: url("./images/icons/tamtam-Light-24px.png");
+    --polytech: url("./images/icons/polytech-Light-24px.png");
+}
+
+.card.light-theme {
+    --foreground: #282828;
+    --focus-outline: #6e6e6e;
+    --avatar-background: #3b3b3b;
+    --avatar-shadow: rgba(59, 59, 59, 0.2);
+    --background: #bbbbbb;
+    --accent-background: #dddddd;
+    --github: url("./images/icons/GitHub-Mark-Dark-24px.png");
+    --tamtam: url("./images/icons/tamtam-Dark-24px.png");
+    --polytech: url("./images/icons/polytech-Dark-24px.png");
+}
+
 html {
-    color: white;
     font-family: Helvetica, sans-serif;
 }
 
@@ -8,7 +31,8 @@ html, body {
 }
 
 .card {
-    background: #444444;
+    color: var(--foreground);
+    background: var(--background);
     border-radius: 30px;
 
     width: 1127px;
@@ -21,7 +45,7 @@ html, body {
 }
 
     .main-info {
-        background: #222222;
+        background: var(--accent-background);
         border-radius: 30px;
         flex:auto;
 
@@ -61,8 +85,8 @@ html, body {
             height: 180px;
             border-radius: 50%;
 
-            background: #C4C4C4;
-            box-shadow: 12px 12px 0 rgba(196, 196, 196, 0.2);
+            background: var(--avatar-background);
+            box-shadow: 12px 12px 0 var(--avatar-shadow);
         }
 
         .minor-info .avatar {
@@ -95,21 +119,30 @@ html, body {
             gap: 0 10px;
         }
 
-            img.social__icon {
+            .social__icon {
                 width: 24px;
+                height: 24px;
                 display: block; /* prevent bad height */
+            }
+            /* Alternative text after `/` isn't supported by Firefox */
+            .github::after {
+                content: var(--github); /* / "mariohuq at GitHub";*/
+            }
+            .tamtam::after {
+                content: var(--tamtam); /* / "mariohuq at TamTam";*/
+            }
+            .polytech::after {
+                content: var(--polytech); /* / "kondraev.de@edu.spbstu.ru";*/
             }
 
         .download-button {
-            background: #444444;
-            border: 3px solid white;
+            border: 3px solid var(--foreground);
             box-sizing: border-box;
             border-radius: 40px;
             padding: 10px 25px;
 
             font-size: 17px;
             line-height: 20px;
-            color: white;
         }
 
         .minor-info .download-button {
@@ -118,6 +151,7 @@ html, body {
 
         a.download-button {
             text-decoration: none;
+            color: var(--foreground);
         }
 
     .card__footer {
@@ -128,7 +162,7 @@ html, body {
         margin: auto 0 13px;
     }
 
-.social__link:focus,
+.social__icon:focus,
 .download-button:focus {
-    outline: 1px dashed white;
+    outline: 1px dashed var(--focus-outline);
 }
