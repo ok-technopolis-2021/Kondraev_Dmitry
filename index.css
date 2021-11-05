@@ -36,6 +36,7 @@ html, body {
     border-radius: 30px;
 
     width: 1127px;
+    margin: 0 auto;
 
     /* Children */
     display: flex;
