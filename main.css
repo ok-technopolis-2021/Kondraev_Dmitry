@@ -1,0 +1,182 @@
+@charset "UTF-8";
+.light-theme {
+  --foreground: #282828;
+  --focus-outline: #6e6e6e;
+  --avatar-background: #3b3b3b;
+  --avatar-shadow: rgba(59, 59, 59, 0.4);
+  --background: #bbbbbb;
+  --accent-background: #dddddd;
+  --github: url("assets/icons/GitHub-Mark-Dark-24px.png");
+  --tamtam: url("assets/icons/tamtam-Dark-24px.png");
+  --polytech: url("assets/icons/polytech-Dark-24px.png");
+}
+
+.link {
+  text-decoration: none;
+}
+.link_type_default {
+  color: var(--foreground);
+}
+
+.focusable:focus, .focusable:focus-visible {
+  outline: 1px dashed var(--focus-outline);
+}
+
+.theme-switcher {
+  --switch-icon: "☼";
+}
+.theme-switcher_light-theme {
+  --switch-icon: "☾︎";
+}
+
+.theme-switcher {
+  width: 40px;
+  height: 40px;
+  margin: 5px;
+  border-radius: 9px;
+  color: var(--foreground);
+  background-color: var(--background);
+  text-align: center;
+  font-size: 22px;
+}
+.theme-switcher::after {
+  content: var(--switch-icon);
+}
+.theme-switcher:focus, .theme-switcher:focus-visible {
+  outline: 3px solid rgba(13, 110, 253, 0.25);
+}
+
+.card {
+  color: var(--foreground);
+  background: var(--background);
+  border-radius: 30px;
+  width: 1127px;
+  margin: 0 auto;
+  /* Children */
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+  text-align: center;
+}
+.card__footer {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 19px;
+  margin: auto 0 13px;
+}
+
+.avatar {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  background: var(--avatar-background);
+  box-shadow: 12px 12px 0 var(--avatar-shadow);
+}
+
+.download-button {
+  border: 3px solid var(--foreground);
+  box-sizing: border-box;
+  border-radius: 40px;
+  padding: 10px 25px;
+  font-size: 17px;
+  line-height: 20px;
+}
+
+.main-info {
+  background: var(--accent-background);
+  border-radius: 30px;
+  flex: auto;
+  /* Children */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.main-info__name {
+  font-weight: bold;
+  font-size: 62px;
+  line-height: 71px;
+  margin: 9px 0 0;
+}
+.main-info__position {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 28px;
+  margin: 1px 0 0;
+}
+
+.minor-info {
+  width: 33.717%;
+  display: flex;
+  /* Children */
+  flex-direction: column;
+  align-items: center;
+}
+.minor-info__avatar {
+  margin: 70px auto 0;
+}
+.minor-info__name {
+  font-weight: bold;
+  font-size: 38px;
+  line-height: 44px;
+  margin: 32px 0 0;
+}
+.minor-info__position {
+  font-size: 20px;
+  line-height: 23px;
+  margin: 6px 0 0;
+}
+.minor-info__social {
+  margin: 15px 0 0;
+}
+.minor-info__download-button {
+  margin: 56px 0 66px;
+}
+
+.social {
+  list-style-type: none;
+  padding: 0;
+  /* Children */
+  display: flex;
+  justify-content: center;
+  gap: 0 10px;
+}
+
+.social__icon {
+  width: 24px;
+  height: 24px;
+  display: block;
+  /* prevent bad height */
+  /* Alternative text after `/` isn't supported by Firefox */
+}
+.social__icon_site_github::after {
+  content: var(--github);
+  /* / "mariohuq at GitHub";*/
+}
+.social__icon_site_tamtam::after {
+  content: var(--tamtam);
+  /* / "mariohuq at TamTam";*/
+}
+.social__icon_site_polytech::after {
+  content: var(--polytech);
+  /* / "kondraev.de@edu.spbstu.ru";*/
+}
+
+body {
+  --foreground: white;
+  --focus-outline: white;
+  --avatar-background: #c4c4c4;
+  --avatar-shadow: rgba(196, 196, 196, 0.2);
+  --background: #444444;
+  --accent-background: #222222;
+  --github: url("assets/icons/GitHub-Mark-Light-24px.png");
+  --tamtam: url("assets/icons/tamtam-Light-24px.png");
+  --polytech: url("assets/icons/polytech-Light-24px.png");
+}
+
+html {
+  font-family: Helvetica, sans-serif;
+}
+
+html, body {
+  margin: 0;
+}
