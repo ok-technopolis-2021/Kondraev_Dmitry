@@ -90,7 +90,7 @@ html, body {
             box-shadow: 12px 12px 0 var(--avatar-shadow);
         }
 
-        .minor-info .avatar {
+        .minor-info__avatar {
             margin: 70px auto 0;
         }
 
@@ -109,15 +109,19 @@ html, body {
             margin: 6px 0 0;
         }
 
-        ul.social {
+        .social {
             list-style-type: none;
             padding: 0;
-            margin: 15px 0 0;
+
 
             /* Children */
             display: flex;
             justify-content: center;
             gap: 0 10px;
+        }
+
+        .minor-info__social {
+            margin: 15px 0 0;
         }
 
             .social__icon {
@@ -126,13 +130,13 @@ html, body {
                 display: block; /* prevent bad height */
             }
             /* Alternative text after `/` isn't supported by Firefox */
-            .social__icon_github::after {
+            .social__icon_site_github::after {
                 content: var(--github); /* / "mariohuq at GitHub";*/
             }
-            .social__icon_tamtam::after {
+            .social__icon_site_tamtam::after {
                 content: var(--tamtam); /* / "mariohuq at TamTam";*/
             }
-            .social__icon_polytech::after {
+            .social__icon_site_polytech::after {
                 content: var(--polytech); /* / "kondraev.de@edu.spbstu.ru";*/
             }
 
@@ -146,13 +150,8 @@ html, body {
             line-height: 20px;
         }
 
-        .minor-info .download-button {
+        .minor-info__download-button {
             margin: 56px 0 66px;
-        }
-
-        a.download-button {
-            text-decoration: none;
-            color: var(--foreground);
         }
 
     .card__footer {
@@ -163,9 +162,16 @@ html, body {
         margin: auto 0 13px;
     }
 
-.social__icon:focus,
-.download-button:focus {
+.focusable:focus, .focusable:focus-visible {
     outline: 1px dashed var(--focus-outline);
+}
+
+.link {
+    text-decoration: none;
+}
+
+.link_type_default {
+    color: var(--foreground);
 }
 
 /* Theme switcher */
@@ -191,10 +197,6 @@ body.light-theme {
 
 .theme-switcher::after {
     content: var(--switch-icon);
-}
-
-.theme-switcher:hover {
-    cursor: pointer;
 }
 
 .theme-switcher:focus, .theme-switcher:focus-visible {
