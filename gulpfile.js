@@ -36,7 +36,11 @@ const paths = {
         optimized: {
             source: './assets/icons/*.png',
             destination: `${dist}/assets/icons`,
-        }
+        },
+        media: {
+            source: './media/*.pdf',
+            destination: `${dist}/media`,
+        },
     },
     clean: {
         source: `${dist}/*`,
@@ -51,12 +55,13 @@ Object.assign(exports, {
     'watch:js': () => watch(paths.watch.jsSource, exports['build:js']),
     'watch:html': () => watch(paths.watch.htmlSource, exports['build:html']),
     'assets:optimizable': () => assetsOptimizable(),
-    'assets:optimized': () => assetsOptimized(),
+    'assets:optimized': () => simpleCopy(paths.assets.optimized),
+    'assets:media': () => simpleCopy(paths.assets.media),
     clean: () => del(paths.clean.source),
 });
 exports.build = series(parallel(exports['build:scss'], exports['build:js']), exports['build:html']);
 exports.watch = parallel(exports['watch:scss'], exports['watch:js'], exports['watch:html']);
-exports.assets = parallel(exports['assets:optimizable'], exports['assets:optimized']);
+exports.assets = parallel(exports['assets:optimizable'], exports['assets:optimized'], exports['assets:media']);
 exports.default = series(exports.build, exports.watch);
 exports['build:all'] = parallel(exports.build, exports.assets);
 
@@ -105,7 +110,7 @@ function assetsOptimizable() {
         .pipe(dest(paths.assets.optimizable.destination));
 }
 
-function assetsOptimized() {
-    return src(paths.assets.optimized.source)
-        .pipe(dest(paths.assets.optimized.destination));
+function simpleCopy({source, destination}) {
+    return src(source)
+        .pipe(dest(destination));
 }
