@@ -1,0 +1,135 @@
+html {
+    color: white;
+    font-family: Helvetica;
+}
+
+html, body {
+    margin: 0;
+}
+
+/*  */
+
+.card {
+    background: #444444;
+    border-radius: 30px;
+
+    width: 1127px;
+
+    /* Children */
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    text-align: center;
+}
+
+    .card_main {
+        background: #222222;
+        border-radius: 30px;
+        flex:auto;
+
+        /* Children */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+        .card_main_heading {
+            font-weight: bold;
+            font-size: 62px;
+            line-height: 71px;
+
+            margin-bottom: 0;
+            margin-top: 9px;
+        }
+        
+        .card_main_para {
+            font-weight: 500;
+            font-size: 22px;
+            line-height: 28px;
+            
+            margin-bottom: 0;
+            margin-top: 1px;
+        }
+
+    .card_aside {
+        width: 33.717%;
+        display: flex;
+        
+        /* Children */
+        flex-direction: column;
+        align-items: center;
+    }
+
+        .avatar {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+
+            margin: 0 auto;
+            margin-top: 70px;
+            
+            background: #C4C4C4;
+            box-shadow: 12px 12px 0px rgba(196, 196, 196, 0.2);
+        }
+
+        .card_aside_heading {
+            font-weight: bold;
+            font-size: 38px;
+            line-height: 44px;
+
+            margin-bottom: 0;
+            margin-top: 32px;
+        }
+
+        .card_aside_para {
+            font-size: 20px;
+            line-height: 23px;
+            margin: 0;
+            margin-top: 6px;
+        }
+
+        ul.social {
+            list-style-type: none;
+            padding: 0px;
+            margin: 0;
+            margin-top: 15px;
+
+            /* Children */
+            display: flex;
+            justify-content: center;
+            gap: 0 10px;
+        }
+
+            .social_icon_image {
+                width: 24px;
+                display: block; /* prevent bad height */
+            }
+
+        .card_aside_download {
+            background: #444444;
+            border: 3px solid white;
+            box-sizing: border-box;
+            border-radius: 40px;
+            padding: 10px 25px;
+
+            margin-top: 56px;
+            margin-bottom: 66px;
+
+            font-size: 17px;
+            line-height: 19.55px;
+            color: white;
+        }
+
+        .card_aside_footer {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 19px;
+
+            margin-top: auto;
+            margin-bottom: 13px;
+        }
+
+.social_icon_link:focus,
+.card_aside_download:focus {
+    outline: 1px dashed white;
+}
