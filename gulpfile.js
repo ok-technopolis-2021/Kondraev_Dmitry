@@ -30,11 +30,11 @@ const paths = {
     },
     assets: {
         optimizable: {
-            source: './assets/*',
+            source: './assets/*.{png,gif,svg}',
             destination: `${dist}/assets`,
         },
         optimized: {
-            source: './assets/icons/*.{png,gif,svg}',
+            source: './assets/icons/*.png',
             destination: `${dist}/assets/icons`,
         }
     },
