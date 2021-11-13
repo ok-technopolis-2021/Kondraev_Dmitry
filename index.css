@@ -126,13 +126,13 @@ html, body {
                 display: block; /* prevent bad height */
             }
             /* Alternative text after `/` isn't supported by Firefox */
-            .github::after {
+            .social__icon_github::after {
                 content: var(--github); /* / "mariohuq at GitHub";*/
             }
-            .tamtam::after {
+            .social__icon_tamtam::after {
                 content: var(--tamtam); /* / "mariohuq at TamTam";*/
             }
-            .polytech::after {
+            .social__icon_polytech::after {
                 content: var(--polytech); /* / "kondraev.de@edu.spbstu.ru";*/
             }
 
