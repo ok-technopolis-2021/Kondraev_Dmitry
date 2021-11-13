@@ -15,12 +15,12 @@
     background-color: var(--background);
     text-align: center;
     font-size: 22px;
-}
 
-.theme-switcher::after {
-    content: var(--switch-icon);
-}
+    &::after {
+        content: var(--switch-icon);
+    }
 
-.theme-switcher:focus, .theme-switcher:focus-visible {
-    outline: 3px solid rgba(13,110,253,.25);
+    &:focus, &:focus-visible {
+        outline: 3px solid rgba(13,110,253,.25);
+    }
 }
