@@ -1,3 +1,15 @@
+@import "../common.blocks/light-theme";
+@import "../common.blocks/link";
+@import "../common.blocks/focusable";
+@import "../common.blocks/theme-switcher/theme-switcher";
+@import "../common.blocks/card";
+@import "../common.blocks/avatar";
+@import "../common.blocks/download-button";
+@import "../common.blocks/main-info";
+@import "../common.blocks/minor-info";
+@import "../common.blocks/social";
+@import "../common.blocks/social__icon";
+
 // default theme
 body {
     --foreground: white;
