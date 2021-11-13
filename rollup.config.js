@@ -4,7 +4,7 @@ import fs from 'fs';
 
 // hack!
 const template = ({ }) =>
-    fs.readFileSync("./index.html")
+    fs.readFileSync("src/index.html")
 
 export default {
     input: 'src/app.js',

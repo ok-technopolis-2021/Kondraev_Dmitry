@@ -5,9 +5,9 @@ body {
     --avatar-shadow: rgba(196, 196, 196, 0.2);
     --background: #444444;
     --accent-background: #222222;
-    --github: url("./images/icons/GitHub-Mark-Light-24px.png");
-    --tamtam: url("./images/icons/tamtam-Light-24px.png");
-    --polytech: url("./images/icons/polytech-Light-24px.png");
+    --github: url("./assets/icons/GitHub-Mark-Light-24px.png");
+    --tamtam: url("./assets/icons/tamtam-Light-24px.png");
+    --polytech: url("./assets/icons/polytech-Light-24px.png");
 }
 
 body.light-theme {
@@ -17,9 +17,9 @@ body.light-theme {
     --avatar-shadow: rgba(59, 59, 59, 0.4);
     --background: #bbbbbb;
     --accent-background: #dddddd;
-    --github: url("./images/icons/GitHub-Mark-Dark-24px.png");
-    --tamtam: url("./images/icons/tamtam-Dark-24px.png");
-    --polytech: url("./images/icons/polytech-Dark-24px.png");
+    --github: url("./assets/icons/GitHub-Mark-Dark-24px.png");
+    --tamtam: url("./assets/icons/tamtam-Dark-24px.png");
+    --polytech: url("./assets/icons/polytech-Dark-24px.png");
 }
 
 html {
