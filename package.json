@@ -4,8 +4,8 @@
   "description": "ДЗ по курсу Technopolis Frontend 2021",
   "main": "index.js",
   "scripts": {
-    "build": "rollup -c ./rollup.config.js",
-    "start": "rollup -cw ./rollup.config.js",
+    "build": "gulp build",
+    "start": "gulp",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
