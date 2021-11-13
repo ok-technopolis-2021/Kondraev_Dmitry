@@ -1,0 +1,22 @@
+.card {
+    color: var(--foreground);
+    background: var(--background);
+    border-radius: 30px;
+
+    width: 1127px;
+    margin: 0 auto;
+
+    /* Children */
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    text-align: center;
+}
+
+.card__footer {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 19px;
+
+    margin: auto 0 13px;
+}

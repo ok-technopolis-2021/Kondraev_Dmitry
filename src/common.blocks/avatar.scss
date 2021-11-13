@@ -1,0 +1,8 @@
+.avatar {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+
+    background: var(--avatar-background);
+    box-shadow: 12px 12px 0 var(--avatar-shadow);
+}
