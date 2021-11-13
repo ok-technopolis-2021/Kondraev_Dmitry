@@ -1,9 +1,9 @@
 .theme-switcher {
   --switch-icon: "☼";
-}
 
-.theme-switcher_light-theme {
-  --switch-icon: "☾︎";
+  &_light-theme {
+    --switch-icon: "☾︎";
+  }
 }
 
 .theme-switcher {

@@ -7,20 +7,22 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+
+  &__name {
+    font-weight: bold;
+    font-size: 62px;
+    line-height: 71px;
+
+    margin: 9px 0 0;
+  }
+
+  &__position {
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 28px;
+
+    margin: 1px 0 0;
+  }
 }
 
-.main-info__name {
-  font-weight: bold;
-  font-size: 62px;
-  line-height: 71px;
-
-  margin: 9px 0 0;
-}
-
-.main-info__position {
-  font-weight: 500;
-  font-size: 22px;
-  line-height: 28px;
-
-  margin: 1px 0 0;
-}
