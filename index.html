@@ -10,29 +10,33 @@
 </head>
 
 <body>
-    <div class="card">
-        <div class="card_main">
-            <h1 class="card_main_heading">Kondraev Dmitry</h1>
-            <p class="card_main_para">Web Developer</p>
-        </div>
-        <section class="card_aside">
-            <img src="./images/avatar.png" alt="Dmitry's avatar" class="avatar">
-            <h2 class="card_aside_heading">Kondraev Dmitry</h2>
-            <p class="card_aside_para">Web Developer</p>
-            <ul class="social">
-                <li class="social_icon"><a class="social_icon_link" href="https://github.com/mariohuq"><img class="social_icon_image" src="./images/icons/GitHub-Mark-Light-24px.png"
-                            alt="mariohuq at GitHub"></a></li>
-                <li class="social_icon"><a class="social_icon_link" href="https://tt.me/mariohuq"><img class="social_icon_image" src="./images/icons/tamtam-Light-24px.png"
-                            alt="mariohuq at TamTam"></a></li>
-                <li class="social_icon"><a class="social_icon_link" href="mailto:kondraev.de@edu.spbstu.ru"><img class="social_icon_image" src="./images/icons/polytech-Light-24px.png"
-                            alt="kondraev.de@edu.spbstu.ru"></a></li>
-            </ul>
-            <form action="./media/kondraev-dmitry-java-dev-cv.pdf" method="get">
-                <input type="submit" value="Download CV" class="card_aside_download">
-            </form>
-            <footer class="card_aside_footer">© 2021 All rights reserved</footer>
-        </section>
+<button class="theme-switcher"></button>
+<div class="card">
+    <div class="main-info">
+        <h1 class="main-info__name">Kondraev Dmitry</h1>
+        <p class="main-info__position">Web Developer</p>
     </div>
+    <section class="minor-info">
+        <img src="./images/avatar.png" alt="Dmitry's avatar" class="avatar minor-info__avatar">
+        <h2 class="minor-info__name">Kondraev Dmitry</h2>
+        <p class="minor-info__position">Web Developer</p>
+        <ul class="minor-info__social social">
+            <li><a class="social__icon social__icon_site_github focusable link" href="https://github.com/mariohuq"></a></li>
+            <li><a class="social__icon social__icon_site_tamtam focusable link" href="https://tt.me/mariohuq"></a></li>
+            <li><a class="social__icon social__icon_site_polytech focusable link" href="mailto:kondraev.de@edu.spbstu.ru"></a></li>
+        </ul>
+        <a href="./media/kondraev-dmitry-java-dev-cv.pdf" class="minor-info__download-button download-button focusable link link_type_default"
+           download="Kondraev Dmitry WebDev CV">
+            Download CV
+        </a>
+        <footer class="card__footer">© 2021 All rights reserved</footer>
+    </section>
+</div>
+<script>
+    document.querySelector('.theme-switcher').addEventListener('click', function() {
+        document.body.classList.toggle('light-theme');
+    })
+</script>
 </body>
 
 </html>
