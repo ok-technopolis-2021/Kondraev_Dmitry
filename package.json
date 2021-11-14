@@ -18,7 +18,9 @@
         "url": "https://github.com/ok-technopolis-2021/Kondraev_Dmitry/issues"
     },
     "homepage": "https://github.com/ok-technopolis-2021/Kondraev_Dmitry#readme",
-    "dependencies": {},
+    "dependencies": {
+        "@fortawesome/fontawesome-free": "^5.15.4"
+    },
     "devDependencies": {
         "@rollup/plugin-html": "^0.2.4",
         "del": "^6.0.0",
