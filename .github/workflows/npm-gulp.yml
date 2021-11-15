@@ -3,16 +3,17 @@ name: Gulp build and deploy
 on:
   workflow_dispatch:
   push:
-    branches: [ main ]
+    branches: [ ${{ github.base_ref }} ]
+  pull_request:
 
 jobs:
   build:
     runs-on: ubuntu-latest
-   
+
     steps:
     - uses: actions/checkout@v2
       with:
-        ref: npm
+        ref: ${{ github.base_ref }}
 
     - name: Use Node.js 16.x
       uses: actions/setup-node@v1
@@ -22,7 +23,7 @@ jobs:
     - name: Build
       run: |
         npm install
-        gulp build:all
+        npm build:all
 
     - name: Deploy 🚀
       uses: peaceiris/actions-gh-pages@v3
