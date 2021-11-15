@@ -1,4 +1,4 @@
-import '../skill/skill'
+import Skill from '../skill/skill'
 
 window.addEventListener('DOMContentLoaded', function () {
     const skillList = document.querySelector('.skills-list');

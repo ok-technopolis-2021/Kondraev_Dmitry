@@ -1,4 +1,4 @@
-class Skill {
+export default class Skill {
     constructor(name = '', value = 0) {
         this.name = name;
         this.value = value;
