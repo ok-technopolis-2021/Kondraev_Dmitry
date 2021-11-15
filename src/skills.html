@@ -12,37 +12,20 @@
 </head>
 <body>
 <div class="skills-list-container">
-    <div class="skills-list">
-        <div class="skill" style="--value: 50%">
-            <span class="skill__name">JavaScript</span>
-            <span class="skill__value">95%</span>
-            <div class="skill__progress-bar progress-bar"></div>
-            <div class="skill__remove-button-container">
-                <button class="remove-button focusable"><i class="far fa-minus" title="Remove skill"></i></button>
-            </div>
-        </div>
-        <div class="skill" style="--value: 50%">
-            <span class="skill__name">JavaScript</span>
-            <span class="skill__value">95%</span>
-            <div class="skill__progress-bar progress-bar"></div>
-            <div class="skill__remove-button-container">
-                <button class="remove-button focusable"><i class="far fa-minus" title="Remove skill"></i></button>
-            </div>
-        </div>
-        <div class="skill" style="--value: 50%">
-            <span class="skill__name">JavaScript</span>
-            <span class="skill__value">95%</span>
-            <div class="skill__progress-bar progress-bar"></div>
-            <div class="skill__remove-button-container">
-                <button class="remove-button focusable"><i class="far fa-minus" title="Remove skill"></i></button>
-            </div>
-        </div>
-    </div>
-    <form class="skills-list__form skill_form">
+    <div class="skills-list"></div>
+    <form class="skills-list-container__form skill_form">
         <h2 class="skill_form__title">Add skill</h2>
-        <div class="skill" style="--value: 0%">
-            <label class="skill__name">Name: <input type="text" class="skill_form__input skill_form__input_name" name="skillName"></label>
-            <label class="skill__value skill__value_in-form">Ratio: <input type="number" min="0" max="100" step="5" value="0" size="5px" class="skill_form__input" name="skillValue"></label>
+        <div class="skill" style="--skill-value: 0%">
+            <label class="skill__name skill__name_in-form">
+                Name:
+                <input type="text" class="skill_form__input skill_form__input_name focusable"
+                       name="skillName" required>
+            </label>
+            <label class="skill__value skill__value_in-form">
+                Ratio:
+                <input type="number" class="skill_form__input focusable"
+                       name="skillValue" min="0" max="100" step="5" value="0" size="5px" required>
+            </label>
             <div class="skill__progress-bar progress-bar"></div>
             <div class="skill__remove-button-container">
                 <button type="submit" class="add-button focusable"><i class="far fa-plus" title="Add skill"></i></button>

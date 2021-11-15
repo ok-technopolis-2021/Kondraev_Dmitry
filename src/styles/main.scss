@@ -47,16 +47,30 @@ html, body {
   color: var(--foreground);
   font-size: 14px;
   padding: 10px 10px 15px;
+  border-radius: 6px;
 
   display: flex;
   gap: 10px;
   flex-direction: column;
+
+  &__form {
+    margin: 5px -10px -10px;
+    padding: 10px;
+    border-radius: inherit;
+  }
 }
 
 .skills-list {
   display: flex;
   gap: 10px;
   flex-direction: column;
+
+  &:empty{
+    &::after {
+      margin: 10px auto;
+      content: 'No skills yet. Feel free to add them ↓';
+    }
+  }
 }
 
 .skill {
@@ -70,6 +84,14 @@ html, body {
     grid-row: 1;
 
     font-weight: bold;
+
+    &::after {
+      content: var(--skill-name);
+    }
+
+    &_in-form::after {
+      content: '';
+    }
   }
 
   &__value {
@@ -77,6 +99,14 @@ html, body {
     grid-row: 1;
 
     opacity: 0.65;
+
+    &::after {
+      content: var(--skill-value);
+    }
+
+    &_in-form::after {
+      content: '';
+    }
   }
 
   &__progress-bar {
@@ -109,7 +139,7 @@ html, body {
   background-position: left;
   background-origin: content-box;
   background-clip: content-box;
-  background-image: linear-gradient(90deg, var(--skill-accent) var(--value), transparent var(--value));
+  background-image: linear-gradient(90deg, var(--skill-accent) var(--skill-value), transparent var(--skill-value));
   box-sizing: border-box;
   height: 15px;
   border-radius: 5px;
@@ -118,17 +148,19 @@ html, body {
 }
 
 .skill_form {
-  margin-top: 10px;
+  background-color: var(--accent-background);
 
   &__title {
     font-size: 1.5em;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
+    margin-top: 5px;
   }
 
   &__input {
     color: inherit;
     background-color: inherit;
     font: inherit;
+    border-width: 1px;
 
     &_name {
       display: inline-block;
