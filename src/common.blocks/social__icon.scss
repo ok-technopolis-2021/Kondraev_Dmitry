@@ -1,0 +1,19 @@
+.social__icon {
+  width: 24px;
+  height: 24px;
+  display: block; /* prevent bad height */
+
+  /* Alternative text after `/` isn't supported by Firefox */
+
+  &_site_github::after {
+    content: var(--github); /* / "mariohuq at GitHub";*/
+  }
+
+  &_site_tamtam::after {
+    content: var(--tamtam); /* / "mariohuq at TamTam";*/
+  }
+
+  &_site_polytech::after {
+    content: var(--polytech); /* / "kondraev.de@edu.spbstu.ru";*/
+  }
+}

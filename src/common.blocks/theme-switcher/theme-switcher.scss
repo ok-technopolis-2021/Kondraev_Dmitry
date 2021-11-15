@@ -1,0 +1,26 @@
+.theme-switcher {
+  --switch-icon: "☼";
+
+  &_light-theme {
+    --switch-icon: "☾︎";
+  }
+}
+
+.theme-switcher {
+  width: 40px;
+  height: 40px;
+  margin: 5px;
+  border-radius: 9px;
+  color: var(--foreground);
+  background-color: var(--background);
+  text-align: center;
+  font-size: 22px;
+
+  &::after {
+    content: var(--switch-icon);
+  }
+
+  &:focus, &:focus-visible {
+    outline: 3px solid rgba(13, 110, 253, .25);
+  }
+}

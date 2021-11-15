@@ -1,0 +1,33 @@
+@import "_reset";
+@import "../common.blocks/light-theme";
+@import "../common.blocks/link";
+@import "../common.blocks/focusable";
+@import "../common.blocks/theme-switcher/theme-switcher";
+@import "../common.blocks/card";
+@import "../common.blocks/avatar";
+@import "../common.blocks/download-button";
+@import "../common.blocks/main-info";
+@import "../common.blocks/minor-info";
+@import "../common.blocks/social";
+@import "../common.blocks/social__icon";
+
+// default theme
+body {
+  --foreground: white;
+  --focus-outline: white;
+  --avatar-background: #c4c4c4;
+  --avatar-shadow: rgba(196, 196, 196, 0.2);
+  --background: #444444;
+  --accent-background: #222222;
+  --github: url("assets/icons/GitHub-Mark-Light-24px.png");
+  --tamtam: url("assets/icons/tamtam-Light-24px.png");
+  --polytech: url("assets/icons/polytech-Light-24px.png");
+}
+
+html {
+  font-family: Helvetica, sans-serif;
+}
+
+html, body {
+  margin: 0;
+}
