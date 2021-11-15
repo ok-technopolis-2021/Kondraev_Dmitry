@@ -29,6 +29,7 @@ body {
   --github: url("assets/icons/GitHub-Mark-Light-24px.png");
   --tamtam: url("assets/icons/tamtam-Light-24px.png");
   --polytech: url("assets/icons/polytech-Light-24px.png");
+  --skill-accent: #00b4e0;
 }
 
 html {
@@ -37,4 +38,106 @@ html {
 
 html, body {
   margin: 0;
+}
+
+.skills-list-container {
+  width: 400px;
+  margin: 0 auto;
+  background-color: var(--background);
+  color: var(--foreground);
+  font-size: 14px;
+  padding: 10px 10px 15px;
+
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+
+.skills-list {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+
+.skill {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  grid-column-gap: 10px;
+  grid-row-gap: 5px;
+
+  &__name {
+    grid-column: 1;
+    grid-row: 1;
+
+    font-weight: bold;
+  }
+
+  &__value {
+    grid-column: 2;
+    grid-row: 1;
+
+    opacity: 0.65;
+  }
+
+  &__progress-bar {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row: 2;
+  }
+
+  &__remove-button-container {
+    grid-column: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+
+    display: flex;
+    align-items: end;
+  }
+}
+
+.remove-button, .add-button {
+  border-radius: 50%;
+  border-width: 0;
+  color: var(--background);
+  background-color: var(--foreground);
+  font-size: 1.2em;
+  width: 25px;
+  height: 25px;
+}
+
+.progress-bar {
+  background-position: left;
+  background-origin: content-box;
+  background-clip: content-box;
+  background-image: linear-gradient(90deg, var(--skill-accent) var(--value), transparent var(--value));
+  box-sizing: border-box;
+  height: 15px;
+  border-radius: 5px;
+  padding: 2px;
+  border: 2px solid var(--skill-accent);
+}
+
+.skill_form {
+  margin-top: 10px;
+
+  &__title {
+    font-size: 1.5em;
+    margin-bottom: 5px;
+  }
+
+  &__input {
+    color: inherit;
+    background-color: inherit;
+    font: inherit;
+
+    &_name {
+      display: inline-block;
+      width: 190px;
+      font-weight: normal;
+    }
+  }
+}
+
+.skill__value_in-form {
+  opacity: 1;
 }
