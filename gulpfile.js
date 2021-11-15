@@ -15,7 +15,7 @@ const paths = {
             destination: dist,
         },
         html: {
-            source: './src/index.html',
+            source: './src/*.html',
             destination: dist,
             injectSources: `${dist}/**/*.{css,js}`,
         },
@@ -27,7 +27,7 @@ const paths = {
     watch: {
         scssSource: './src/**/*.scss',
         jsSource: './src/**/*.js',
-        htmlSource: './src/index.html',
+        htmlSource: './src/*.html',
     },
     assets: {
         optimizable: {
