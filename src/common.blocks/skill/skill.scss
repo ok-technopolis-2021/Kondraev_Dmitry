@@ -9,14 +9,6 @@
     grid-row: 1;
 
     font-weight: bold;
-
-    &::after {
-      content: var(--skill-name);
-    }
-
-    &_in-form::after {
-      content: '';
-    }
   }
 
   &__value {
@@ -25,16 +17,8 @@
 
     opacity: 0.65;
 
-    &::after {
-      content: var(--skill-value);
-    }
-
     &_in-form {
       opacity: 1;
-
-      &::after {
-        content: '';
-      }
     }
   }
 
