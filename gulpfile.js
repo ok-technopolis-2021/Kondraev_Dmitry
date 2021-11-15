@@ -1,4 +1,5 @@
 const {src, dest, watch, parallel, series} = require('gulp');
+const tildeImporter = require('node-sass-tilde-importer');
 const sass = require('gulp-sass')(require('sass'));
 const inject = require('gulp-inject');
 const image = require('gulp-image');
@@ -41,6 +42,10 @@ const paths = {
             source: './media/*.pdf',
             destination: `${dist}/media`,
         },
+        fontawesome: {
+            source: 'node_modules/@fortawesome/fontawesome-free/webfonts/fa-regular-400.*',
+            destination: `${dist}/assets/webfonts`,
+        },
     },
     clean: {
         source: `${dist}/*`,
@@ -57,18 +62,19 @@ Object.assign(exports, {
     'assets:optimizable': () => assetsOptimizable(),
     'assets:optimized': () => simpleCopy(paths.assets.optimized),
     'assets:media': () => simpleCopy(paths.assets.media),
+    'assets:fontawesome': () => simpleCopy(paths.assets.fontawesome),
     clean: () => del(paths.clean.source),
 });
 exports.build = series(parallel(exports['build:scss'], exports['build:js']), exports['build:html']);
 exports.watch = parallel(exports['watch:scss'], exports['watch:js'], exports['watch:html']);
-exports.assets = parallel(exports['assets:optimizable'], exports['assets:optimized'], exports['assets:media']);
+exports.assets = parallel(exports['assets:optimizable'], exports['assets:optimized'], exports['assets:media'], exports['assets:fontawesome']);
 exports.default = series(exports.build, exports.watch);
 exports['build:all'] = parallel(exports.build, exports.assets);
 
 function buildScss() {
     const {source, destination} = paths.build.scss;
     return src(source)
-        .pipe(sass())
+        .pipe(sass({importer: tildeImporter}).on('error', sass.logError))
         .pipe(dest(destination));
 }
 

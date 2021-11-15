@@ -1,4 +1,11 @@
 @import "_reset";
+
+// relative from your compiled CSS directory
+$fa-font-path: "./assets/webfonts";
+
+@import "~@fortawesome/fontawesome-free/scss/fontawesome.scss";
+@import "~@fortawesome/fontawesome-free/scss/regular.scss";
+
 @import "../common.blocks/light-theme";
 @import "../common.blocks/link";
 @import "../common.blocks/focusable";
