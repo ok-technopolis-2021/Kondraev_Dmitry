@@ -11,7 +11,7 @@ window.addEventListener('DOMContentLoaded', function () {
         new Skill('JavaScript', 25),
         new Skill('PHP', 85),
         new Skill('HTML/CSS', 100),
-        new Skill('Cobol', -100)
+        new Skill('Cobol', 95)
     ]) {
         skill.renderInto(skillList);
     }
