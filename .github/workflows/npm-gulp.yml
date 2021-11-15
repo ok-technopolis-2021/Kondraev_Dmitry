@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
   push:
     branches:
-    - ${{ github.base_ref }}
+    - ${{ github.head_ref }}
   pull_request:
 
 jobs:
@@ -13,9 +13,6 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-      with:
-        ref: ${{ github.base_ref }}
-
     - name: Use Node.js 16.x
       uses: actions/setup-node@v1
       with:
