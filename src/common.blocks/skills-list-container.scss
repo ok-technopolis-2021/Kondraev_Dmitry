@@ -1,0 +1,19 @@
+.skills-list-container {
+  width: 400px;
+  margin: 0 auto;
+  background-color: var(--background);
+  color: var(--foreground);
+  font-size: 14px;
+  padding: 10px 10px 15px;
+  border-radius: 6px;
+
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+
+  &__form {
+    margin: 5px -10px -10px;
+    padding: 10px;
+    border-radius: inherit;
+  }
+}

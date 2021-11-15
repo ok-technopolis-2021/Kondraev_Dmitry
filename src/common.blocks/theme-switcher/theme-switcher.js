@@ -1,5 +1,9 @@
 window.addEventListener('DOMContentLoaded', function () {
-    document.querySelector('.theme-switcher').addEventListener('click', function (element) {
+    const switcher = document.querySelector('.theme-switcher');
+    if (!switcher) {
+        return;
+    }
+    switcher.addEventListener('click', function (element) {
         document.body.classList.toggle('light-theme');
         element.target.classList.toggle('theme-switcher_light-theme');
     });

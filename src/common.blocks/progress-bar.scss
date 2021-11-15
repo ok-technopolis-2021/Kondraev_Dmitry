@@ -1,0 +1,11 @@
+.progress-bar {
+  background-position: left;
+  background-origin: content-box;
+  background-clip: content-box;
+  background-image: linear-gradient(90deg, var(--skill-accent) var(--skill-value), transparent var(--skill-value));
+  box-sizing: border-box;
+  height: 15px;
+  border-radius: 5px;
+  padding: 2px;
+  border: 2px solid var(--skill-accent);
+}

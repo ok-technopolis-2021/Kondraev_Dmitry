@@ -1,0 +1,78 @@
+.skill {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  grid-column-gap: 10px;
+  grid-row-gap: 5px;
+
+  &__name {
+    grid-column: 1;
+    grid-row: 1;
+
+    font-weight: bold;
+
+    &::after {
+      content: var(--skill-name);
+    }
+
+    &_in-form::after {
+      content: '';
+    }
+  }
+
+  &__value {
+    grid-column: 2;
+    grid-row: 1;
+
+    opacity: 0.65;
+
+    &::after {
+      content: var(--skill-value);
+    }
+
+    &_in-form {
+      opacity: 1;
+
+      &::after {
+        content: '';
+      }
+    }
+  }
+
+  &__progress-bar {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row: 2;
+  }
+
+  &__remove-button-container {
+    grid-column: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+
+    display: flex;
+    align-items: end;
+  }
+
+  &_form {
+    background-color: var(--accent-background);
+
+    &__title {
+      font-size: 1.5em;
+      margin-bottom: 10px;
+      margin-top: 5px;
+    }
+
+    &__input {
+      color: inherit;
+      background-color: inherit;
+      font: inherit;
+      border-width: 1px;
+
+      &_name {
+        display: inline-block;
+        width: 190px;
+        font-weight: normal;
+      }
+    }
+  }
+}
