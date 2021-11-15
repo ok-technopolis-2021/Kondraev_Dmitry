@@ -32,7 +32,7 @@ export default class Skill {
                     }
                 ).appendChild(document.createElement('button')),
                 {
-                    className: 'remove-button focusable'
+                    className: 'skill-button skill-button_remove focusable'
                 }
             ).appendChild(document.createElement('i')),
             {
@@ -41,7 +41,7 @@ export default class Skill {
             }
         );
 
-        target.querySelector('.skills-button').addEventListener('click', function (event) {
+        target.querySelector('.skill-button_remove').addEventListener('click', function (event) {
             event.target.closest('.skill').remove();
         });
     }
