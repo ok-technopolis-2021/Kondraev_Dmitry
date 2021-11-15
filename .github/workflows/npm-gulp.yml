@@ -3,7 +3,8 @@ name: Gulp build and deploy
 on:
   workflow_dispatch:
   push:
-    branches: [ ${{ github.base_ref }} ]
+    branches:
+    - ${{ github.base_ref }}
   pull_request:
 
 jobs:
