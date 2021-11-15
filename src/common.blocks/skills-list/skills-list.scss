@@ -3,7 +3,7 @@
   gap: 10px;
   flex-direction: column;
 
-  &:empty{
+  &:empty {
     &::after {
       margin: 10px auto;
       content: 'No skills yet. Feel free to add them ↓';
