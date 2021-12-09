@@ -43,7 +43,7 @@ const paths = {
             destination: `${dist}/media`,
         },
         fontawesome: {
-            source: 'node_modules/@fortawesome/fontawesome-free/webfonts/fa-regular-400.*',
+            source: 'node_modules/@fortawesome/fontawesome-free/webfonts/fa-solid-900.*',
             destination: `${dist}/assets/webfonts`,
         },
     },

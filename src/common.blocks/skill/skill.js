@@ -36,7 +36,7 @@ export default class Skill {
                 }
             ).appendChild(document.createElement('i')),
             {
-                className: 'far fa-minus',
+                className: 'fas fa-minus',
                 title: 'Remove skill'
             }
         );
