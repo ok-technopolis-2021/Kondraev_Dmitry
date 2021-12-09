@@ -20,7 +20,6 @@
     },
     "homepage": "https://github.com/ok-technopolis-2021/Kondraev_Dmitry#readme",
     "devDependencies": {
-        "@fortawesome/fontawesome-free": "^5.15.4",
         "@rollup/plugin-html": "^0.2.4",
         "del": "^6.0.0",
         "gulp": "^4.0.2",
@@ -33,5 +32,8 @@
         "rollup-plugin-scss": "^3.0.0",
         "rollup-stream": "^1.24.1",
         "sass": "^1.43.2"
+    },
+    "dependencies": {
+        "@fortawesome/fontawesome-free": "^5.15.4"
     }
 }
