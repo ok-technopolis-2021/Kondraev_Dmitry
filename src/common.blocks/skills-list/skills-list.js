@@ -7,12 +7,13 @@ window.addEventListener('DOMContentLoaded', function () {
     }
 
     // Здесь можно забрать скиллы с сервера
-    for (const skill of [
+    const skills = [
         new Skill('JavaScript', 25),
         new Skill('PHP', 85),
         new Skill('HTML/CSS', 100),
         new Skill('Cobol', 95)
-    ]) {
+    ];
+    for (const skill of skills) {
         skillList.appendChild(skill.render());
     }
 });
