@@ -13,6 +13,6 @@ window.addEventListener('DOMContentLoaded', function () {
         new Skill('HTML/CSS', 100),
         new Skill('Cobol', 95)
     ]) {
-        skill.renderInto(skillList);
+        skillList.appendChild(skill.render());
     }
 });
