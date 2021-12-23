@@ -6134,6 +6134,7 @@ readers do not read off random characters that represent icons */
   --github: url("assets/icons/GitHub-Mark-Dark-24px.png");
   --tamtam: url("assets/icons/tamtam-Dark-24px.png");
   --polytech: url("assets/icons/polytech-Dark-24px.png");
+  --link-primary-color: #0d6efd;
 }
 
 .link {
@@ -6141,6 +6142,10 @@ readers do not read off random characters that represent icons */
 }
 .link_type_default {
   color: var(--foreground);
+}
+.link_type_primary {
+  color: var(--link-primary-color);
+  text-decoration: underline;
 }
 
 .focusable:focus, .focusable:focus-visible {
@@ -6229,6 +6234,11 @@ readers do not read off random characters that represent icons */
   line-height: 28px;
   margin: 1px 0 0;
 }
+.main-info__message {
+  font-size: 17px;
+  line-height: 20px;
+  margin: 10px 0 0 0;
+}
 
 .minor-info {
   width: 33.717%;
@@ -6239,6 +6249,9 @@ readers do not read off random characters that represent icons */
 }
 .minor-info__avatar {
   margin: 70px auto 0;
+  display: block;
+  font-size: 0;
+  border-radius: 50%;
 }
 .minor-info__name {
   font-weight: bold;
@@ -6407,6 +6420,7 @@ body {
   --tamtam: url("assets/icons/tamtam-Light-24px.png");
   --polytech: url("assets/icons/polytech-Light-24px.png");
   --skill-accent: #00b4e0;
+  --link-primary-color: #0d6efd;
 }
 
 html {
