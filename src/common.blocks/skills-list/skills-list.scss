@@ -1,0 +1,27 @@
+.skills-list {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  height: 387px;
+  overflow-y: scroll;
+  scroll-snap-type: y proximity;
+  scroll-padding-top: 1px;
+  padding-right: 10px;
+
+  &-wrapper {
+    padding: 15px 0 15px 10px;
+    background-color: var(--accent-background);
+    border-radius: 10px;
+  }
+
+  &__element {
+    scroll-snap-align: start;
+  }
+
+  &:empty {
+    &::after {
+      margin: auto auto;
+      content: 'No skills yet. Feel free to add them ↓';
+    }
+  }
+}

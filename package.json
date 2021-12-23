@@ -5,6 +5,7 @@
     "main": "index.js",
     "scripts": {
         "build": "gulp build",
+        "build:all": "gulp build:all",
         "start": "gulp",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
@@ -18,7 +19,6 @@
         "url": "https://github.com/ok-technopolis-2021/Kondraev_Dmitry/issues"
     },
     "homepage": "https://github.com/ok-technopolis-2021/Kondraev_Dmitry#readme",
-    "dependencies": {},
     "devDependencies": {
         "@rollup/plugin-html": "^0.2.4",
         "del": "^6.0.0",
@@ -27,9 +27,13 @@
         "gulp-image": "^6.2.1",
         "gulp-inject": "^5.0.5",
         "gulp-sass": "^5.0.0",
+        "node-sass-tilde-importer": "^1.0.2",
         "rollup": "^2.60.0",
         "rollup-plugin-scss": "^3.0.0",
         "rollup-stream": "^1.24.1",
         "sass": "^1.43.2"
+    },
+    "dependencies": {
+        "@fortawesome/fontawesome-free": "^5.15.4"
     }
 }

@@ -1,22 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kondraev Dmitry</title>
+    <title>Kondraev Dmitry | Skills</title>
     <!-- inject:css -->
     <!-- endinject -->
+    <!-- inject:js -->
+    <!-- endinject -->
 </head>
-
 <body>
 <button class="theme-switcher focusable"></button>
 <div class="card">
     <div class="main-info">
-        <h1 class="main-info__name">Kondraev Dmitry</h1>
-        <p class="main-info__position">Web Developer</p>
-        <p class="main-info__message"><a href="skills.html" class="focusable link link_type_primary">Check out</a> my skills! 💪</p>
+        <div class="skills-list-container">
+            <div class="skills-list-wrapper">
+                <div class="skills-list"></div>
+            </div>
+            <form class="skills-list-container__form skill_form">
+                <h2 class="skill_form__title">Add skill</h2>
+                <div class="skill" style="--skill-value: 0%">
+                    <label class="skill__name">
+                        Name:
+                        <input type="text" class="skill_form__input skill_form__input_name focusable"
+                               name="skillName" required>
+                    </label>
+                    <label class="skill__value skill__value_in-form">
+                        Ratio:
+                        <input type="number" class="skill_form__input focusable"
+                               name="skillValue" min="0" max="100" step="5" value="0" size="5px" required>
+                    </label>
+                    <div class="skill__progress-bar progress-bar"></div>
+                    <div class="skill__remove-button-container">
+                        <button type="submit" class="skill-button focusable">
+                            <i class="fas fa-plus" title="Add skill"></i>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
     </div>
     <section class="minor-info">
         <a href="index.html" class="minor-info__avatar focusable"><img src="assets/avatar.png" alt="Dmitry's avatar" title="Main" class="avatar"></a>
@@ -38,6 +61,4 @@
     </section>
 </div>
 </body>
-<!-- inject:js -->
-<!-- endinject -->
 </html>

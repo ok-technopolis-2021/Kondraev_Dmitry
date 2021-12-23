@@ -4,4 +4,9 @@
   &_type_default {
     color: var(--foreground);
   }
+
+  &_type_primary {
+    color: var(--link-primary-color);
+    text-decoration: underline;
+  }
 }
