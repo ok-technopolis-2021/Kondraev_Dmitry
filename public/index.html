@@ -28,6 +28,9 @@
 </head>
 <body>
 <button class="theme-switcher focusable js-only"></button>
+<noscript>
+    <p class="message">You need to enable JavaScript to be able to switch color scheme.</p>
+</noscript>
 <div class="card">
     <div class="main-info" id="root">
         <noscript>
@@ -38,8 +41,7 @@
     </div>
 
     <section class="minor-info">
-        <a href="index.html" class="minor-info__avatar focusable"><img src="%PUBLIC_URL%/assets/avatar.png" alt="Dmitry's avatar"
-                                                                       title="Main" class="avatar"></a>
+        <img src="%PUBLIC_URL%/assets/avatar.png" alt="Dmitry's avatar" title="Main" class="avatar minor-info__avatar">
         <h2 class="minor-info__name">Kondraev Dmitry</h2>
         <p class="minor-info__position">Web Developer</p>
         <ul class="minor-info__social social">
