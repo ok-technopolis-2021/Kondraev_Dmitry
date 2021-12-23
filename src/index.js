@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-    BrowserRouter as Router,
+    HashRouter as Router,
     Routes,
     Route
 } from 'react-router-dom';
@@ -18,7 +18,7 @@ window.addEventListener('DOMContentLoaded', function () {
 
 ReactDOM.render(
     <React.StrictMode>
-        <Router>
+        <Router base="/">
             <Routes>
                 <Route path="/" element={<MainInfo/>}/>
                 <Route path="skills" element={<SkillsApp/>}/>
