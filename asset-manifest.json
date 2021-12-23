@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/Kondraev_Dmitry/static/css/main.e25ef335.chunk.css",
+    "main.js": "/Kondraev_Dmitry/static/js/main.d30b86b6.chunk.js",
+    "main.js.map": "/Kondraev_Dmitry/static/js/main.d30b86b6.chunk.js.map",
+    "runtime-main.js": "/Kondraev_Dmitry/static/js/runtime-main.a441fe33.js",
+    "runtime-main.js.map": "/Kondraev_Dmitry/static/js/runtime-main.a441fe33.js.map",
+    "static/js/2.71d9465e.chunk.js": "/Kondraev_Dmitry/static/js/2.71d9465e.chunk.js",
+    "static/js/2.71d9465e.chunk.js.map": "/Kondraev_Dmitry/static/js/2.71d9465e.chunk.js.map",
+    "static/js/3.e77de655.chunk.js": "/Kondraev_Dmitry/static/js/3.e77de655.chunk.js",
+    "static/js/3.e77de655.chunk.js.map": "/Kondraev_Dmitry/static/js/3.e77de655.chunk.js.map",
+    "index.html": "/Kondraev_Dmitry/index.html",
+    "static/css/main.e25ef335.chunk.css.map": "/Kondraev_Dmitry/static/css/main.e25ef335.chunk.css.map",
+    "static/js/2.71d9465e.chunk.js.LICENSE.txt": "/Kondraev_Dmitry/static/js/2.71d9465e.chunk.js.LICENSE.txt",
+    "static/media/index.scss": "/Kondraev_Dmitry/static/media/fa-solid-900.eeccf4f6.woff"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a441fe33.js",
+    "static/js/2.71d9465e.chunk.js",
+    "static/css/main.e25ef335.chunk.css",
+    "static/js/main.d30b86b6.chunk.js"
+  ]
+}
