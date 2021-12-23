@@ -13,29 +13,54 @@
     <!-- endinject -->
 </head>
 <body>
-<div class="skills-list-container">
-    <div class="skills-list"></div>
-    <form class="skills-list-container__form skill_form">
-        <h2 class="skill_form__title">Add skill</h2>
-        <div class="skill" style="--skill-value: 0%">
-            <label class="skill__name">
-                Name:
-                <input type="text" class="skill_form__input skill_form__input_name focusable"
-                       name="skillName" required>
-            </label>
-            <label class="skill__value skill__value_in-form">
-                Ratio:
-                <input type="number" class="skill_form__input focusable"
-                       name="skillValue" min="0" max="100" step="5" value="0" size="5px" required>
-            </label>
-            <div class="skill__progress-bar progress-bar"></div>
-            <div class="skill__remove-button-container">
-                <button type="submit" class="skill-button focusable">
-                    <i class="fas fa-plus" title="Add skill"></i>
-                </button>
+<button class="theme-switcher focusable"></button>
+<div class="card">
+    <div class="main-info">
+        <div class="skills-list-container">
+            <div class="skills-list-wrapper">
+                <div class="skills-list"></div>
             </div>
+            <form class="skills-list-container__form skill_form">
+                <h2 class="skill_form__title">Add skill</h2>
+                <div class="skill" style="--skill-value: 0%">
+                    <label class="skill__name">
+                        Name:
+                        <input type="text" class="skill_form__input skill_form__input_name focusable"
+                               name="skillName" required>
+                    </label>
+                    <label class="skill__value skill__value_in-form">
+                        Ratio:
+                        <input type="number" class="skill_form__input focusable"
+                               name="skillValue" min="0" max="100" step="5" value="0" size="5px" required>
+                    </label>
+                    <div class="skill__progress-bar progress-bar"></div>
+                    <div class="skill__remove-button-container">
+                        <button type="submit" class="skill-button focusable">
+                            <i class="fas fa-plus" title="Add skill"></i>
+                        </button>
+                    </div>
+                </div>
+            </form>
         </div>
-    </form>
+    </div>
+    <section class="minor-info">
+        <img src="assets/avatar.png" alt="Dmitry's avatar" class="avatar minor-info__avatar">
+        <h2 class="minor-info__name">Kondraev Dmitry</h2>
+        <p class="minor-info__position">Web Developer</p>
+        <ul class="minor-info__social social">
+            <li><a class="social__icon social__icon_site_github focusable link" href="https://github.com/mariohuq"></a>
+            </li>
+            <li><a class="social__icon social__icon_site_tamtam focusable link" href="https://tt.me/mariohuq"></a></li>
+            <li><a class="social__icon social__icon_site_polytech focusable link"
+                   href="mailto:kondraev.de@edu.spbstu.ru"></a></li>
+        </ul>
+        <a href="./media/kondraev-dmitry-java-dev-cv.pdf"
+           class="minor-info__download-button download-button focusable link link_type_default"
+           download="Kondraev Dmitry WebDev CV">
+            Download CV
+        </a>
+        <footer class="card__footer">© 2021 All rights reserved</footer>
+    </section>
 </div>
 </body>
 </html>

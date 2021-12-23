@@ -6330,9 +6330,6 @@ readers do not read off random characters that represent icons */
   display: flex;
   align-items: end;
 }
-.skill_form {
-  background-color: var(--accent-background);
-}
 .skill_form__title {
   font-size: 1.5em;
   margin-bottom: 10px;
@@ -6346,7 +6343,7 @@ readers do not read off random characters that represent icons */
 }
 .skill_form__input_name {
   display: inline-block;
-  width: 190px;
+  width: 180px;
   font-weight: normal;
 }
 
@@ -6364,26 +6361,37 @@ readers do not read off random characters that represent icons */
   display: flex;
   gap: 10px;
   flex-direction: column;
+  height: 387px;
+  overflow-y: scroll;
+  scroll-snap-type: y proximity;
+  scroll-padding-top: 1px;
+  padding-right: 10px;
+}
+.skills-list-wrapper {
+  padding: 15px 0 15px 10px;
+  background-color: var(--accent-background);
+  border-radius: 10px;
+}
+.skills-list__element {
+  scroll-snap-align: start;
 }
 .skills-list:empty::after {
-  margin: 10px auto;
+  margin: auto auto;
   content: "No skills yet. Feel free to add them ↓";
 }
 
 .skills-list-container {
   width: 400px;
-  margin: 10px auto 0;
+  margin: 0 auto;
   background-color: var(--background);
   color: var(--foreground);
   font-size: 14px;
-  padding: 10px 10px 15px;
-  border-radius: 6px;
+  border-radius: 10px;
+  border: solid var(--background) 1px;
   display: flex;
-  gap: 10px;
   flex-direction: column;
 }
 .skills-list-container__form {
-  margin: 5px -10px -10px;
   padding: 10px;
   border-radius: inherit;
 }

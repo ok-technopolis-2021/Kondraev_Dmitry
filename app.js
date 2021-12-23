@@ -71,7 +71,7 @@ class Skill {
 
     render() {
         return render(document.createElement('div'), {
-            className: 'skill',
+            className: 'skill skills-list__element',
             style: this.style(),
             content: [
                 {
@@ -95,7 +95,9 @@ class Skill {
                         tagName: 'button',
                         className: 'skill-button skill-button_remove focusable',
                         onclick: function (event) {
-                            event.target.closest('.skill').remove();
+                            const skillElement = event.target.closest('.skill');
+                            (skillElement.nextElementSibling || skillElement.previousElementSibling)?.querySelector('.skill-button_remove').focus();
+                            skillElement.remove();
                         },
                         content: {
                             tagName: 'i',
