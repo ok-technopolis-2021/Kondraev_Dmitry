@@ -6,14 +6,15 @@
   font-size: 14px;
   padding: 10px 10px 15px;
   border-radius: 6px;
+  border: solid var(--background) 1px;
 
   display: flex;
   gap: 10px;
   flex-direction: column;
 
   &__form {
-    margin: 5px -10px -10px;
-    padding: 10px;
+    margin: 5px -10px -15px;
+    padding: 15px;
     border-radius: inherit;
   }
 }
