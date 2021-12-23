@@ -1,0 +1,54 @@
+@import "./styles/_reset";
+
+$fa-font-path: "~@fortawesome/fontawesome-free/webfonts";
+
+@import "~@fortawesome/fontawesome-free/scss/fontawesome";
+@import "~@fortawesome/fontawesome-free/scss/solid";
+
+// index.html
+@import "./common.blocks/light-theme";
+@import "./common.blocks/link";
+@import "./common.blocks/focusable";
+@import "./common.blocks/theme-switcher/theme-switcher";
+@import "./common.blocks/card";
+@import "./common.blocks/avatar";
+@import "./common.blocks/download-button";
+@import "./common.blocks/main-info";
+@import "./common.blocks/minor-info";
+@import "./common.blocks/social";
+@import "./common.blocks/social__icon";
+
+// skills.html
+@import "./common.blocks/progress-bar";
+@import "./common.blocks/skill/skill";
+@import "./common.blocks/skill-button";
+@import "./common.blocks/skills-list/skills-list";
+@import "./common.blocks/skills-list-container";
+
+// default theme
+body {
+  --foreground: white;
+  --focus-outline: white;
+  --avatar-background: #c4c4c4;
+  --avatar-shadow: rgba(196, 196, 196, 0.2);
+  --background: #444444;
+  --accent-background: #222222;
+  --github: url("./assets/GitHub-Mark-Light-24px.png");
+  --tamtam: url("./assets/tamtam-Light-24px.png");
+  --polytech: url("./assets/polytech-Light-24px.png");
+  --skill-accent: #00b4e0;
+  --link-primary-color: #0d6efd;
+}
+
+body {
+  font-family: Helvetica, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

@@ -1,12 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './components/App/App';
+import SkillsApp from './components/SkillsApp/SkillsApp';
 import reportWebVitals from './reportWebVitals';
+import registerSwitcher from "./common.blocks/theme-switcher/theme-switcher";
+
+import './index.scss';
+
+window.addEventListener('DOMContentLoaded', function () {
+    registerSwitcher();
+});
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <SkillsApp/>
   </React.StrictMode>,
   document.getElementById('root')
 );

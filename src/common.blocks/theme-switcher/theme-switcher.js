@@ -1,4 +1,4 @@
-window.addEventListener('DOMContentLoaded', function () {
+export default function registerSwitcher() {
     const switcher = document.querySelector('.theme-switcher');
     if (!switcher) {
         return;
@@ -7,4 +7,4 @@ window.addEventListener('DOMContentLoaded', function () {
         document.body.classList.toggle('light-theme');
         element.target.classList.toggle('theme-switcher_light-theme');
     });
-});
+}
