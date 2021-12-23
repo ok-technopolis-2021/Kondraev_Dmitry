@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/ok-technopolis-2021/Kondraev_Dmitrystatic/css/main.dbbd5c80.chunk.css",
+    "main.js": "/ok-technopolis-2021/Kondraev_Dmitrystatic/js/main.d30b86b6.chunk.js",
+    "main.js.map": "/ok-technopolis-2021/Kondraev_Dmitrystatic/js/main.d30b86b6.chunk.js.map",
+    "runtime-main.js": "/ok-technopolis-2021/Kondraev_Dmitrystatic/js/runtime-main.b1c4e5d4.js",
+    "runtime-main.js.map": "/ok-technopolis-2021/Kondraev_Dmitrystatic/js/runtime-main.b1c4e5d4.js.map",
+    "static/js/2.71d9465e.chunk.js": "/ok-technopolis-2021/Kondraev_Dmitrystatic/js/2.71d9465e.chunk.js",
+    "static/js/2.71d9465e.chunk.js.map": "/ok-technopolis-2021/Kondraev_Dmitrystatic/js/2.71d9465e.chunk.js.map",
+    "static/js/3.e77de655.chunk.js": "/ok-technopolis-2021/Kondraev_Dmitrystatic/js/3.e77de655.chunk.js",
+    "static/js/3.e77de655.chunk.js.map": "/ok-technopolis-2021/Kondraev_Dmitrystatic/js/3.e77de655.chunk.js.map",
+    "index.html": "/ok-technopolis-2021/Kondraev_Dmitryindex.html",
+    "static/css/main.dbbd5c80.chunk.css.map": "/ok-technopolis-2021/Kondraev_Dmitrystatic/css/main.dbbd5c80.chunk.css.map",
+    "static/js/2.71d9465e.chunk.js.LICENSE.txt": "/ok-technopolis-2021/Kondraev_Dmitrystatic/js/2.71d9465e.chunk.js.LICENSE.txt",
+    "static/media/index.scss": "/ok-technopolis-2021/Kondraev_Dmitrystatic/media/fa-solid-900.eeccf4f6.woff"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b1c4e5d4.js",
+    "static/js/2.71d9465e.chunk.js",
+    "static/css/main.dbbd5c80.chunk.css",
+    "static/js/main.d30b86b6.chunk.js"
+  ]
+}
