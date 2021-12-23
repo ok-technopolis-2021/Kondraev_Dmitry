@@ -8,7 +8,7 @@ export default class Skill {
 
     render() {
         return render(document.createElement('div'), {
-            className: 'skill',
+            className: 'skill skills-list__element',
             style: this.style(),
             content: [
                 {

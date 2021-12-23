@@ -38,8 +38,6 @@
   }
 
   &_form {
-    background-color: var(--accent-background);
-
     &__title {
       font-size: 1.5em;
       margin-bottom: 10px;
@@ -54,7 +52,7 @@
 
       &_name {
         display: inline-block;
-        width: 190px;
+        width: 180px;
         font-weight: normal;
       }
     }
