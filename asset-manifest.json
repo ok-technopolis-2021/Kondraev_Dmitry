@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Kondraev_Dmitry/static/css/main.e25ef335.chunk.css",
+    "main.css": "/Kondraev_Dmitry/static/css/main.92cc6f11.chunk.css",
     "main.js": "/Kondraev_Dmitry/static/js/main.207e9861.chunk.js",
     "main.js.map": "/Kondraev_Dmitry/static/js/main.207e9861.chunk.js.map",
     "runtime-main.js": "/Kondraev_Dmitry/static/js/runtime-main.a441fe33.js",
@@ -10,14 +10,14 @@
     "static/js/3.e77de655.chunk.js": "/Kondraev_Dmitry/static/js/3.e77de655.chunk.js",
     "static/js/3.e77de655.chunk.js.map": "/Kondraev_Dmitry/static/js/3.e77de655.chunk.js.map",
     "index.html": "/Kondraev_Dmitry/index.html",
-    "static/css/main.e25ef335.chunk.css.map": "/Kondraev_Dmitry/static/css/main.e25ef335.chunk.css.map",
+    "static/css/main.92cc6f11.chunk.css.map": "/Kondraev_Dmitry/static/css/main.92cc6f11.chunk.css.map",
     "static/js/2.09458a97.chunk.js.LICENSE.txt": "/Kondraev_Dmitry/static/js/2.09458a97.chunk.js.LICENSE.txt",
     "static/media/index.scss": "/Kondraev_Dmitry/static/media/fa-solid-900.eeccf4f6.woff"
   },
   "entrypoints": [
     "static/js/runtime-main.a441fe33.js",
     "static/js/2.09458a97.chunk.js",
-    "static/css/main.e25ef335.chunk.css",
+    "static/css/main.92cc6f11.chunk.css",
     "static/js/main.207e9861.chunk.js"
   ]
 }
